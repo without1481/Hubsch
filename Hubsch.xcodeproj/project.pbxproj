@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A353A5BE20467C370081436A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A353A5BD20467C370081436A /* LoginViewController.swift */; };
+		A353A5C020467C460081436A /* RegistrationRouterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A353A5BF20467C460081436A /* RegistrationRouterViewController.swift */; };
+		A353A5C320467C900081436A /* UserDataFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A353A5C220467C900081436A /* UserDataFirstViewController.swift */; };
+		A353A5C520467C990081436A /* UserDataSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A353A5C420467C990081436A /* UserDataSecondViewController.swift */; };
+		A353A5C720467CA80081436A /* UserDataThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A353A5C620467CA80081436A /* UserDataThirdViewController.swift */; };
 		A3D2A2CA20453205005E9815 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D2A2C920453205005E9815 /* AppDelegate.swift */; };
 		A3D2A2CC20453205005E9815 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D2A2CB20453205005E9815 /* ViewController.swift */; };
 		A3D2A2CF20453205005E9815 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3D2A2CD20453205005E9815 /* Main.storyboard */; };
@@ -16,6 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A353A5BD20467C370081436A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A353A5BF20467C460081436A /* RegistrationRouterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationRouterViewController.swift; sourceTree = "<group>"; };
+		A353A5C220467C900081436A /* UserDataFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataFirstViewController.swift; sourceTree = "<group>"; };
+		A353A5C420467C990081436A /* UserDataSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataSecondViewController.swift; sourceTree = "<group>"; };
+		A353A5C620467CA80081436A /* UserDataThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataThirdViewController.swift; sourceTree = "<group>"; };
 		A3D2A2C620453205005E9815 /* Hubsch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hubsch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3D2A2C920453205005E9815 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3D2A2CB20453205005E9815 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +47,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A353A5BC20467C170081436A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A353A5C120467C6E0081436A /* Registration */,
+				A353A5BD20467C370081436A /* LoginViewController.swift */,
+				A353A5BF20467C460081436A /* RegistrationRouterViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A353A5C120467C6E0081436A /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				A353A5C220467C900081436A /* UserDataFirstViewController.swift */,
+				A353A5C420467C990081436A /* UserDataSecondViewController.swift */,
+				A353A5C620467CA80081436A /* UserDataThirdViewController.swift */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
 		A3D2A2BD20453205005E9815 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +86,7 @@
 		A3D2A2C820453205005E9815 /* Hubsch */ = {
 			isa = PBXGroup;
 			children = (
+				A353A5BC20467C170081436A /* ViewControllers */,
 				A3D2A2C920453205005E9815 /* AppDelegate.swift */,
 				A3D2A2CB20453205005E9815 /* ViewController.swift */,
 				A3D2A2CD20453205005E9815 /* Main.storyboard */,
@@ -139,8 +170,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A353A5BE20467C370081436A /* LoginViewController.swift in Sources */,
+				A353A5C020467C460081436A /* RegistrationRouterViewController.swift in Sources */,
 				A3D2A2CC20453205005E9815 /* ViewController.swift in Sources */,
 				A3D2A2CA20453205005E9815 /* AppDelegate.swift in Sources */,
+				A353A5C320467C900081436A /* UserDataFirstViewController.swift in Sources */,
+				A353A5C720467CA80081436A /* UserDataThirdViewController.swift in Sources */,
+				A353A5C520467C990081436A /* UserDataSecondViewController.swift in Sources */,
 				A3D2A2D220453205005E9815 /* Hubsch.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
