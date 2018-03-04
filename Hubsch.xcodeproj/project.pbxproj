@@ -15,20 +15,22 @@
 		A3A9D6E0204BE523001D0C89 /* CoreRouterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A9D6DF204BE523001D0C89 /* CoreRouterViewController.swift */; };
 		A3A9D6E7204BE77B001D0C89 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A9D6E6204BE77B001D0C89 /* CollectionViewCell.swift */; };
 		A3A9D6E9204C3D50001D0C89 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A9D6E8204C3D50001D0C89 /* MainViewController.swift */; };
+		A3A9D6EA204C6D91001D0C89 /* AACarousel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A9D6EB204C6D91001D0C89 /* AACarousel.framework */; };
 		A3BA37092047FD12003EB55E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BA37082047FD12003EB55E /* User.swift */; };
 		A3BA370B20480B2B003EB55E /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BA370A20480B2B003EB55E /* Regex.swift */; };
-		A3BA373A204931CD003EB55E /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A3BA3739204931CD003EB55E /* logo.png */; };
 		A3BA373E20493694003EB55E /* NavigationRouterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BA373D20493694003EB55E /* NavigationRouterViewController.swift */; };
 		A3BA374020497BA0003EB55E /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BA373F20497BA0003EB55E /* ViewExtension.swift */; };
-		A3BA37442049D5D7003EB55E /* dress.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A3BA37432049D5D6003EB55E /* dress.jpg */; };
 		A3D2A2CA20453205005E9815 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D2A2C920453205005E9815 /* AppDelegate.swift */; };
 		A3D2A2CF20453205005E9815 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3D2A2CD20453205005E9815 /* Main.storyboard */; };
 		A3D2A2D220453205005E9815 /* Hubsch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A3D2A2D020453205005E9815 /* Hubsch.xcdatamodeld */; };
 		A3D2A2D420453205005E9815 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3D2A2D320453205005E9815 /* Assets.xcassets */; };
 		A3D2A2D720453205005E9815 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3D2A2D520453205005E9815 /* LaunchScreen.storyboard */; };
+		F893A0DE4B4190C38B324A7D /* Pods_Hubsch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25993670297358ED83FA33F7 /* Pods_Hubsch.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A7FD010CE409A0B7B6EC3CB /* Pods-Hubsch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hubsch.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hubsch/Pods-Hubsch.release.xcconfig"; sourceTree = "<group>"; };
+		25993670297358ED83FA33F7 /* Pods_Hubsch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hubsch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A353A5BD20467C370081436A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A353A5BF20467C460081436A /* RegistrationRouterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationRouterViewController.swift; sourceTree = "<group>"; };
 		A353A5C220467C900081436A /* UserDataFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataFirstViewController.swift; sourceTree = "<group>"; };
@@ -37,12 +39,11 @@
 		A3A9D6DF204BE523001D0C89 /* CoreRouterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreRouterViewController.swift; sourceTree = "<group>"; };
 		A3A9D6E6204BE77B001D0C89 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		A3A9D6E8204C3D50001D0C89 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A3A9D6EB204C6D91001D0C89 /* AACarousel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AACarousel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3BA37082047FD12003EB55E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A3BA370A20480B2B003EB55E /* Regex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
-		A3BA3739204931CD003EB55E /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		A3BA373D20493694003EB55E /* NavigationRouterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRouterViewController.swift; sourceTree = "<group>"; };
 		A3BA373F20497BA0003EB55E /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
-		A3BA37432049D5D6003EB55E /* dress.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dress.jpg; sourceTree = "<group>"; };
 		A3D2A2C620453205005E9815 /* Hubsch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hubsch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3D2A2C920453205005E9815 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3D2A2CE20453205005E9815 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -50,6 +51,7 @@
 		A3D2A2D320453205005E9815 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3D2A2D620453205005E9815 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3D2A2D820453205005E9815 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8EE0A15EC8B20C5E4626810 /* Pods-Hubsch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hubsch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hubsch/Pods-Hubsch.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +59,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3A9D6EA204C6D91001D0C89 /* AACarousel.framework in Frameworks */,
+				F893A0DE4B4190C38B324A7D /* Pods_Hubsch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14A2C62E110C7A49369788E0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A8EE0A15EC8B20C5E4626810 /* Pods-Hubsch.debug.xcconfig */,
+				1A7FD010CE409A0B7B6EC3CB /* Pods-Hubsch.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A2F1B82AF713C0654A5AC15E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3A9D6EB204C6D91001D0C89 /* AACarousel.framework */,
+				25993670297358ED83FA33F7 /* Pods_Hubsch.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A353A5BC20467C170081436A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +139,8 @@
 			children = (
 				A3D2A2C820453205005E9815 /* Hubsch */,
 				A3D2A2C720453205005E9815 /* Products */,
+				14A2C62E110C7A49369788E0 /* Pods */,
+				A2F1B82AF713C0654A5AC15E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,8 +161,6 @@
 				A3D2A2C920453205005E9815 /* AppDelegate.swift */,
 				A3D2A2CD20453205005E9815 /* Main.storyboard */,
 				A3D2A2D320453205005E9815 /* Assets.xcassets */,
-				A3BA37432049D5D6003EB55E /* dress.jpg */,
-				A3BA3739204931CD003EB55E /* logo.png */,
 				A3D2A2D520453205005E9815 /* LaunchScreen.storyboard */,
 				A3D2A2D820453205005E9815 /* Info.plist */,
 				A3D2A2D020453205005E9815 /* Hubsch.xcdatamodeld */,
@@ -153,9 +175,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A3D2A2DB20453205005E9815 /* Build configuration list for PBXNativeTarget "Hubsch" */;
 			buildPhases = (
+				1BE54A4FF46F711029F0D8CC /* [CP] Check Pods Manifest.lock */,
 				A3D2A2C220453205005E9815 /* Sources */,
 				A3D2A2C320453205005E9815 /* Frameworks */,
 				A3D2A2C420453205005E9815 /* Resources */,
+				F728B91524BCEFBA5E95C77C /* [CP] Embed Pods Frameworks */,
+				C59EB41702651AB45C556AF6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -205,15 +230,69 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3BA373A204931CD003EB55E /* logo.png in Resources */,
 				A3D2A2D720453205005E9815 /* LaunchScreen.storyboard in Resources */,
-				A3BA37442049D5D7003EB55E /* dress.jpg in Resources */,
 				A3D2A2D420453205005E9815 /* Assets.xcassets in Resources */,
 				A3D2A2CF20453205005E9815 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1BE54A4FF46F711029F0D8CC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hubsch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C59EB41702651AB45C556AF6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hubsch/Pods-Hubsch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F728B91524BCEFBA5E95C77C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Hubsch/Pods-Hubsch-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AACarousel/AACarousel.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AACarousel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hubsch/Pods-Hubsch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A3D2A2C220453205005E9815 /* Sources */ = {
@@ -368,6 +447,7 @@
 		};
 		A3D2A2DC20453205005E9815 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8EE0A15EC8B20C5E4626810 /* Pods-Hubsch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -383,6 +463,7 @@
 		};
 		A3D2A2DD20453205005E9815 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A7FD010CE409A0B7B6EC3CB /* Pods-Hubsch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
