@@ -12,8 +12,16 @@
 		A353A5C320467C900081436A /* UserDataFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A353A5C220467C900081436A /* UserDataFirstViewController.swift */; };
 		A353A5C520467C990081436A /* UserDataSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A353A5C420467C990081436A /* UserDataSecondViewController.swift */; };
 		A353A5C720467CA80081436A /* UserDataThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A353A5C620467CA80081436A /* UserDataThirdViewController.swift */; };
+		A3A9D6E0204BE523001D0C89 /* CoreRouterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A9D6DF204BE523001D0C89 /* CoreRouterViewController.swift */; };
+		A3A9D6E7204BE77B001D0C89 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A9D6E6204BE77B001D0C89 /* CollectionViewCell.swift */; };
+		A3A9D6E9204C3D50001D0C89 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A9D6E8204C3D50001D0C89 /* MainViewController.swift */; };
+		A3BA37092047FD12003EB55E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BA37082047FD12003EB55E /* User.swift */; };
+		A3BA370B20480B2B003EB55E /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BA370A20480B2B003EB55E /* Regex.swift */; };
+		A3BA373A204931CD003EB55E /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A3BA3739204931CD003EB55E /* logo.png */; };
+		A3BA373E20493694003EB55E /* NavigationRouterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BA373D20493694003EB55E /* NavigationRouterViewController.swift */; };
+		A3BA374020497BA0003EB55E /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BA373F20497BA0003EB55E /* ViewExtension.swift */; };
+		A3BA37442049D5D7003EB55E /* dress.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A3BA37432049D5D6003EB55E /* dress.jpg */; };
 		A3D2A2CA20453205005E9815 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D2A2C920453205005E9815 /* AppDelegate.swift */; };
-		A3D2A2CC20453205005E9815 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D2A2CB20453205005E9815 /* ViewController.swift */; };
 		A3D2A2CF20453205005E9815 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3D2A2CD20453205005E9815 /* Main.storyboard */; };
 		A3D2A2D220453205005E9815 /* Hubsch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A3D2A2D020453205005E9815 /* Hubsch.xcdatamodeld */; };
 		A3D2A2D420453205005E9815 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3D2A2D320453205005E9815 /* Assets.xcassets */; };
@@ -26,9 +34,17 @@
 		A353A5C220467C900081436A /* UserDataFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataFirstViewController.swift; sourceTree = "<group>"; };
 		A353A5C420467C990081436A /* UserDataSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataSecondViewController.swift; sourceTree = "<group>"; };
 		A353A5C620467CA80081436A /* UserDataThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataThirdViewController.swift; sourceTree = "<group>"; };
+		A3A9D6DF204BE523001D0C89 /* CoreRouterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreRouterViewController.swift; sourceTree = "<group>"; };
+		A3A9D6E6204BE77B001D0C89 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		A3A9D6E8204C3D50001D0C89 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A3BA37082047FD12003EB55E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A3BA370A20480B2B003EB55E /* Regex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
+		A3BA3739204931CD003EB55E /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		A3BA373D20493694003EB55E /* NavigationRouterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRouterViewController.swift; sourceTree = "<group>"; };
+		A3BA373F20497BA0003EB55E /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		A3BA37432049D5D6003EB55E /* dress.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dress.jpg; sourceTree = "<group>"; };
 		A3D2A2C620453205005E9815 /* Hubsch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hubsch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3D2A2C920453205005E9815 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A3D2A2CB20453205005E9815 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A3D2A2CE20453205005E9815 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A3D2A2D120453205005E9815 /* Hubsch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hubsch.xcdatamodel; sourceTree = "<group>"; };
 		A3D2A2D320453205005E9815 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -50,9 +66,11 @@
 		A353A5BC20467C170081436A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				A3A9D6E1204BE529001D0C89 /* Routers */,
 				A353A5C120467C6E0081436A /* Registration */,
 				A353A5BD20467C370081436A /* LoginViewController.swift */,
-				A353A5BF20467C460081436A /* RegistrationRouterViewController.swift */,
+				A3BA373D20493694003EB55E /* NavigationRouterViewController.swift */,
+				A3A9D6E8204C3D50001D0C89 /* MainViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -65,6 +83,33 @@
 				A353A5C620467CA80081436A /* UserDataThirdViewController.swift */,
 			);
 			path = Registration;
+			sourceTree = "<group>";
+		};
+		A3A9D6E1204BE529001D0C89 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				A3A9D6DF204BE523001D0C89 /* CoreRouterViewController.swift */,
+				A353A5BF20467C460081436A /* RegistrationRouterViewController.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		A3BA37072047FD07003EB55E /* Third */ = {
+			isa = PBXGroup;
+			children = (
+				A3BA37082047FD12003EB55E /* User.swift */,
+				A3BA370A20480B2B003EB55E /* Regex.swift */,
+				A3BA373F20497BA0003EB55E /* ViewExtension.swift */,
+			);
+			path = Third;
+			sourceTree = "<group>";
+		};
+		A3BA37452049D641003EB55E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A3A9D6E6204BE77B001D0C89 /* CollectionViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		A3D2A2BD20453205005E9815 = {
@@ -86,11 +131,14 @@
 		A3D2A2C820453205005E9815 /* Hubsch */ = {
 			isa = PBXGroup;
 			children = (
+				A3BA37452049D641003EB55E /* View */,
+				A3BA37072047FD07003EB55E /* Third */,
 				A353A5BC20467C170081436A /* ViewControllers */,
 				A3D2A2C920453205005E9815 /* AppDelegate.swift */,
-				A3D2A2CB20453205005E9815 /* ViewController.swift */,
 				A3D2A2CD20453205005E9815 /* Main.storyboard */,
 				A3D2A2D320453205005E9815 /* Assets.xcassets */,
+				A3BA37432049D5D6003EB55E /* dress.jpg */,
+				A3BA3739204931CD003EB55E /* logo.png */,
 				A3D2A2D520453205005E9815 /* LaunchScreen.storyboard */,
 				A3D2A2D820453205005E9815 /* Info.plist */,
 				A3D2A2D020453205005E9815 /* Hubsch.xcdatamodeld */,
@@ -157,7 +205,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3BA373A204931CD003EB55E /* logo.png in Resources */,
 				A3D2A2D720453205005E9815 /* LaunchScreen.storyboard in Resources */,
+				A3BA37442049D5D7003EB55E /* dress.jpg in Resources */,
 				A3D2A2D420453205005E9815 /* Assets.xcassets in Resources */,
 				A3D2A2CF20453205005E9815 /* Main.storyboard in Resources */,
 			);
@@ -170,14 +220,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3A9D6E9204C3D50001D0C89 /* MainViewController.swift in Sources */,
 				A353A5BE20467C370081436A /* LoginViewController.swift in Sources */,
+				A3BA370B20480B2B003EB55E /* Regex.swift in Sources */,
 				A353A5C020467C460081436A /* RegistrationRouterViewController.swift in Sources */,
-				A3D2A2CC20453205005E9815 /* ViewController.swift in Sources */,
+				A3A9D6E7204BE77B001D0C89 /* CollectionViewCell.swift in Sources */,
 				A3D2A2CA20453205005E9815 /* AppDelegate.swift in Sources */,
 				A353A5C320467C900081436A /* UserDataFirstViewController.swift in Sources */,
 				A353A5C720467CA80081436A /* UserDataThirdViewController.swift in Sources */,
+				A3A9D6E0204BE523001D0C89 /* CoreRouterViewController.swift in Sources */,
+				A3BA373E20493694003EB55E /* NavigationRouterViewController.swift in Sources */,
 				A353A5C520467C990081436A /* UserDataSecondViewController.swift in Sources */,
+				A3BA37092047FD12003EB55E /* User.swift in Sources */,
 				A3D2A2D220453205005E9815 /* Hubsch.xcdatamodeld in Sources */,
+				A3BA374020497BA0003EB55E /* ViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

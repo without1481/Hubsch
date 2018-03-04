@@ -10,26 +10,47 @@ import UIKit
 
 class UserDataThirdViewController: UIViewController {
 
+    @IBOutlet weak var userEmail: UITextField!
+    @IBOutlet weak var userPassword: UITextField!
+    @IBOutlet weak var userRepeatPassword: UITextField!
+    
+    let router = RegistrationRouterViewController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        router.isFirstVC = false
+        router.isThirdVC = true
+        
+        userEmail.addTarget(self, action: #selector(checkEmail), for: .allEditingEvents)
+        userPassword.addTarget(self, action: #selector(checkPassword), for: .allEditingEvents)
+        userRepeatPassword.addTarget(self, action: #selector(checkRepeatPassword), for: .allEditingEvents)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @objc func checkEmail () {
+        if isValidEmail(email: userEmail.text!) {
+            User.userEmail = userEmail.text!
+        }
     }
-    */
+    
+    @objc func checkPassword () {
+        
+    }
+    
+    @objc func checkRepeatPassword () {
+        if userPassword.text! == userRepeatPassword.text! {
+            User.userPassword = userPassword.text!
+        }
+        else {
+            User.userPassword = ""
+        }
+    }
+    
+    func isValidEmail(email:String) -> Bool {
 
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        
+        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailTest.evaluate(with: email)
+    }
 }
