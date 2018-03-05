@@ -16,6 +16,11 @@
 		A3A9D6E7204BE77B001D0C89 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A9D6E6204BE77B001D0C89 /* CollectionViewCell.swift */; };
 		A3A9D6E9204C3D50001D0C89 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A9D6E8204C3D50001D0C89 /* MainViewController.swift */; };
 		A3A9D6EA204C6D91001D0C89 /* AACarousel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A9D6EB204C6D91001D0C89 /* AACarousel.framework */; };
+		A3A9D6ED204C72CE001D0C89 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A9D6EC204C72CE001D0C89 /* SearchViewController.swift */; };
+		A3A9D6EF204C7446001D0C89 /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A9D6EE204C7446001D0C89 /* FavouritesViewController.swift */; };
+		A3A9D6F1204D372F001D0C89 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A9D6F0204D372F001D0C89 /* ChatViewController.swift */; };
+		A3A9D6F3204D42D3001D0C89 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A9D6F2204D42D3001D0C89 /* Color.swift */; };
+		A3A9D6F5204D5EDE001D0C89 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A9D6F4204D5EDE001D0C89 /* Keyboard.swift */; };
 		A3BA37092047FD12003EB55E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BA37082047FD12003EB55E /* User.swift */; };
 		A3BA370B20480B2B003EB55E /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BA370A20480B2B003EB55E /* Regex.swift */; };
 		A3BA373E20493694003EB55E /* NavigationRouterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BA373D20493694003EB55E /* NavigationRouterViewController.swift */; };
@@ -40,6 +45,11 @@
 		A3A9D6E6204BE77B001D0C89 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		A3A9D6E8204C3D50001D0C89 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A3A9D6EB204C6D91001D0C89 /* AACarousel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AACarousel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3A9D6EC204C72CE001D0C89 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		A3A9D6EE204C7446001D0C89 /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
+		A3A9D6F0204D372F001D0C89 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		A3A9D6F2204D42D3001D0C89 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		A3A9D6F4204D5EDE001D0C89 /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
 		A3BA37082047FD12003EB55E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A3BA370A20480B2B003EB55E /* Regex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
 		A3BA373D20493694003EB55E /* NavigationRouterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRouterViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +103,9 @@
 				A353A5BD20467C370081436A /* LoginViewController.swift */,
 				A3BA373D20493694003EB55E /* NavigationRouterViewController.swift */,
 				A3A9D6E8204C3D50001D0C89 /* MainViewController.swift */,
+				A3A9D6EC204C72CE001D0C89 /* SearchViewController.swift */,
+				A3A9D6EE204C7446001D0C89 /* FavouritesViewController.swift */,
+				A3A9D6F0204D372F001D0C89 /* ChatViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -122,6 +135,8 @@
 				A3BA37082047FD12003EB55E /* User.swift */,
 				A3BA370A20480B2B003EB55E /* Regex.swift */,
 				A3BA373F20497BA0003EB55E /* ViewExtension.swift */,
+				A3A9D6F2204D42D3001D0C89 /* Color.swift */,
+				A3A9D6F4204D5EDE001D0C89 /* Keyboard.swift */,
 			);
 			path = Third;
 			sourceTree = "<group>";
@@ -280,11 +295,15 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Hubsch/Pods-Hubsch-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AACarousel/AACarousel.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQMessagesViewController/JSQMessagesViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AACarousel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQMessagesViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQSystemSoundPlayer.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +318,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3A9D6EF204C7446001D0C89 /* FavouritesViewController.swift in Sources */,
+				A3A9D6ED204C72CE001D0C89 /* SearchViewController.swift in Sources */,
 				A3A9D6E9204C3D50001D0C89 /* MainViewController.swift in Sources */,
 				A353A5BE20467C370081436A /* LoginViewController.swift in Sources */,
 				A3BA370B20480B2B003EB55E /* Regex.swift in Sources */,
@@ -306,13 +327,16 @@
 				A3A9D6E7204BE77B001D0C89 /* CollectionViewCell.swift in Sources */,
 				A3D2A2CA20453205005E9815 /* AppDelegate.swift in Sources */,
 				A353A5C320467C900081436A /* UserDataFirstViewController.swift in Sources */,
+				A3A9D6F5204D5EDE001D0C89 /* Keyboard.swift in Sources */,
 				A353A5C720467CA80081436A /* UserDataThirdViewController.swift in Sources */,
 				A3A9D6E0204BE523001D0C89 /* CoreRouterViewController.swift in Sources */,
+				A3A9D6F1204D372F001D0C89 /* ChatViewController.swift in Sources */,
 				A3BA373E20493694003EB55E /* NavigationRouterViewController.swift in Sources */,
 				A353A5C520467C990081436A /* UserDataSecondViewController.swift in Sources */,
 				A3BA37092047FD12003EB55E /* User.swift in Sources */,
 				A3D2A2D220453205005E9815 /* Hubsch.xcdatamodeld in Sources */,
 				A3BA374020497BA0003EB55E /* ViewExtension.swift in Sources */,
+				A3A9D6F3204D42D3001D0C89 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

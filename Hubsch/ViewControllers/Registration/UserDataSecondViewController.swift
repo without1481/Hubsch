@@ -21,6 +21,9 @@ class UserDataSecondViewController: UIViewController,UIPickerViewDelegate,UIPick
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.hideKeyboardWhenTappedAround()
+        
         countryPicker.delegate = self
         countryPicker.dataSource = self
         

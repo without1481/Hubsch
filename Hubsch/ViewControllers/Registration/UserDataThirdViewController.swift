@@ -19,6 +19,8 @@ class UserDataThirdViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.hideKeyboardWhenTappedAround()
+        
         router.isFirstVC = false
         router.isThirdVC = true
         

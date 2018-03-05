@@ -22,41 +22,20 @@ class RegistrationRouterViewController: UIViewController {
     var viewControllers = [UIViewController]()
     
     private lazy var firstViewController: UserDataFirstViewController = {
-        // Load Storyboard
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        
-        // Instantiate View Controller
         var viewController = storyboard.instantiateViewController(withIdentifier: "UserDataFirst") as! UserDataFirstViewController
-        
-        // Add View Controller as Child View Controller
-        //self.add(asChildViewController: viewController)
-        
         return viewController
     }()
     
     private lazy var secondViewController: UserDataSecondViewController = {
-        // Load Storyboard
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        
-        // Instantiate View Controller
         var viewController = storyboard.instantiateViewController(withIdentifier: "UserDataSecond") as! UserDataSecondViewController
-        
-        // Add View Controller as Child View Controller
-        //self.add(asChildViewController: viewController)
-        
         return viewController
     }()
     
     private lazy var thirdViewController: UserDataThirdViewController = {
-        // Load Storyboard
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        
-        // Instantiate View Controller
         var viewController = storyboard.instantiateViewController(withIdentifier: "UserDataThird") as! UserDataThirdViewController
-        
-        // Add View Controller as Child View Controller
-        //self.add(asChildViewController: viewController)
-        
         return viewController
     }()
     

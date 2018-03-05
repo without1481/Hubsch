@@ -10,26 +10,54 @@ import UIKit
 
 class UserDataFirstViewController: UIViewController {
 
+    @IBOutlet weak var name:UITextField!
+    @IBOutlet weak var surname:UITextField!
+    @IBOutlet weak var birthday:UIDatePicker!
+    @IBOutlet weak var gender:UISegmentedControl!
+    
+    let formatter = DateFormatter()
+    let router = RegistrationRouterViewController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        self.hideKeyboardWhenTappedAround()
+        formatter.dateFormat = "yyyy-MM-dd"
+        
+        name.addTarget(self, action: #selector(checkName), for: .editingChanged)
+        surname.addTarget(self, action: #selector(checkSurname), for: .editingChanged)
+        birthday.addTarget(self, action: #selector(checkBirthday), for: .valueChanged)
+        gender.addTarget(self, action: #selector(checkGender), for: .valueChanged)
+        birthday.maximumDate = Date()
+        
+        User.userBirthday = formatter.string(from: birthday.date)
+        User.userGender = gender.selectedSegmentIndex
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @objc func checkName () {
+        User.userName = name.text!
+        //changeStyleStatus(textField: name)
     }
-    */
-
+    
+    func changeStyleStatus(textField:UITextField) {
+        if textField.text! == "" {
+            textField.layer.borderColor = UIColor.red.cgColor
+            textField.layer.borderWidth = 1
+        }
+        else {
+            textField.layer.borderColor = UIColor.clear.cgColor
+        }
+    }
+    
+    @objc func checkSurname() {
+        User.userSurname = surname.text!
+        //changeStyleStatus(textField: surname)
+    }
+    
+    @objc func checkBirthday () {
+        User.userBirthday = formatter.string(from: birthday.date)
+    }
+    
+    @objc func checkGender () {
+        User.userGender = gender.selectedSegmentIndex
+    }
 }

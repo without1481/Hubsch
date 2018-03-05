@@ -12,7 +12,13 @@ import AACarousel
 
 class MainViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,AACarouselDelegate {
 
-    private let imageSliderUrl = ["dress","dress","dress","dress","dress"]
+    let pathArray = ["http://www.gettyimages.ca/gi-resources/images/Embed/new/embed2.jpg",
+                     "https://ak.picdn.net/assets/cms/97e1dd3f8a3ecb81356fe754a1a113f31b6dbfd4-stock-photo-photo-of-a-common-kingfisher-alcedo-atthis-adult-male-perched-on-a-lichen-covered-branch-107647640.jpg",
+                     "https://imgct2.aeplcdn.com/img/800x600/car-data/big/honda-amaze-image-12749.png",
+                     "http://www.conversion-uplift.co.uk/wp-content/uploads/2016/09/Lamborghini-Huracan-Image-672x372.jpg",
+                     "very-large-flamingo"]
+    
+    let titleArray = ["picture 1","picture 2","picture 3","picture 4","picture 5"]
     
     private let ItemInfo = [
         ["title":"Hubsch","imageUrl":"dress","price":"$100"],["title":"Hubsch","imageUrl":"dress","price":"$100"],["title":"Hubsch","imageUrl":"dress","price":"$100"],["title":"Hubsch","imageUrl":"dress","price":"$100"],["title":"Hubsch","imageUrl":"dress","price":"$100"],["title":"Hubsch","imageUrl":"dress","price":"$100"],["title":"Hubsch","imageUrl":"dress","price":"$100"],["title":"Hubsch","imageUrl":"dress","price":"$100"],["title":"Hubsch","imageUrl":"dress","price":"$100"],
@@ -26,13 +32,6 @@ class MainViewController: UIViewController,UICollectionViewDelegate,UICollection
         super.viewDidLoad()
         collect.delegate = self
         collect.dataSource = self
-        
-        let pathArray = ["http://www.gettyimages.ca/gi-resources/images/Embed/new/embed2.jpg",
-                         "https://ak.picdn.net/assets/cms/97e1dd3f8a3ecb81356fe754a1a113f31b6dbfd4-stock-photo-photo-of-a-common-kingfisher-alcedo-atthis-adult-male-perched-on-a-lichen-covered-branch-107647640.jpg",
-                         "https://imgct2.aeplcdn.com/img/800x600/car-data/big/honda-amaze-image-12749.png",
-                         "http://www.conversion-uplift.co.uk/wp-content/uploads/2016/09/Lamborghini-Huracan-Image-672x372.jpg",
-                         "very-large-flamingo"]
-        let titleArray = ["picture 1","picture 2","picture 3","picture 4","picture 5"]
         
         carouselView.delegate = self
         carouselView.setCarouselData(paths: pathArray,  describedTitle: titleArray, isAutoScroll: true, timer: 5.0, defaultImage: "defaultImage")
@@ -79,7 +78,7 @@ class MainViewController: UIViewController,UICollectionViewDelegate,UICollection
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "newCell", for: indexPath) as! CollectionViewCell
-        cell.setupView(itemImage: UIImage(named:ItemInfo[indexPath.row]["imageUrl"]!)!, itemTitle: ItemInfo[indexPath.row]["title"]!, itemPrice: ItemInfo[indexPath.row]["price"]!)
+        cell.setupView(itemImage: UIImage(named:ItemInfo[indexPath.row]["imageUrl"]!)!, itemTitle: ItemInfo[indexPath.row]["title"]!, itemPrice: ItemInfo[indexPath.row]["price"]!, isFavourite: false, id: indexPath.row)
         return cell
     }
     
