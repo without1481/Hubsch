@@ -10,16 +10,5 @@ struct User {
     static var userRegion:Int = 1
     static var userSurname:String = ""
     static var userID:String = ""
-    
-    func preventDefault() {
-        User.userName = ""
-        User.userEmail = ""
-        User.userPassword = ""
-        User.userBirthday = ""
-        User.userGender = 0
-        User.userCountry = 1
-        User.userRegion = 1
-        User.userSurname = ""
-        User.userID = ""
-    }
+    static var token:String = ""
 }

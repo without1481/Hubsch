@@ -13,10 +13,9 @@ class RegistrationRouterViewController: UIViewController {
     @IBOutlet weak var changedContent: UIView!
     @IBOutlet weak var progressIndicator: UIView!
     @IBOutlet weak var nextStepButton: UIButton!
+    @IBOutlet weak var backBarItem: UIBarButtonItem!
     
     var firstRespond:Bool = true
-    var isFirstVC = true
-    var isThirdVC = false
     let defaults = UserDefaults.standard
     
     var viewControllers = [UIViewController]()
@@ -39,8 +38,15 @@ class RegistrationRouterViewController: UIViewController {
         return viewController
     }()
     
+    private lazy var loginViewController: LoginViewController = {
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        var viewController = storyboard.instantiateViewController(withIdentifier: "login") as! LoginViewController
+        return viewController
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         viewControllers = [firstViewController,secondViewController,thirdViewController]
         nextStepButton.tag = 0
         nextStepButton.layer.cornerRadius = 5
@@ -76,21 +82,40 @@ class RegistrationRouterViewController: UIViewController {
     @IBAction func nextStep(_ sender: UIButton) {
         
         if sender.tag == (viewControllers.count - 1) {
+            
+            if (User.userEmail == "") {
+                showAlertView(text: "Please fill email", title: "Warning")
+                return
+            }
+            
+            if (User.userPassword == "") {
+                showAlertView(text: "Please fill password", title: "Warning")
+                return
+            }
+            
             registation()
         }
         else {
             if firstRespond {
+                
                 add(asChildViewController: viewControllers[sender.tag])
                 firstRespond = !firstRespond
             }
             else {
                 
-                if checkInputData() {
+                if (User.userName == "") {
+                    showAlertView(text: "Please fill name", title: "Warning")
+                    return
+                }
+                
+                if (User.userSurname == "") {
+                    showAlertView(text: "Please fill surname", title: "Warning")
                     return
                 }
                 
                 remove(asChildViewController: viewControllers[sender.tag])
                 sender.tag += 1
+                self.backBarItem.tag += 1
                 add(asChildViewController: viewControllers[sender.tag])
                 
                 if sender.tag == (viewControllers.count - 1) {
@@ -98,28 +123,6 @@ class RegistrationRouterViewController: UIViewController {
                 }
             }
         }
-    }
-    
-    func checkInputData() -> Bool {
-        if isFirstVC {
-            if (User.userName == "") {
-                showAlertView(text: "Please fill name", title: "Warning")
-                return true
-            }
-            
-            if (User.userSurname == "") {
-                showAlertView(text: "Please fill surname", title: "Warning")
-                return true
-            }
-        }
-        else if isThirdVC {
-            if (User.userEmail == "") {
-                showAlertView(text: "Please fill email", title: "Warning")
-                return true
-            }
-        }
-        
-        return false
     }
     
     func registation() {
@@ -145,15 +148,29 @@ class RegistrationRouterViewController: UIViewController {
             User.userID = String(data: data!, encoding: String.Encoding.utf8)!
             DispatchQueue.main.async {
                 
-                self.defaults.set(User.userEmail, forKey: "UserEmail")
-                self.defaults.set(User.userSurname, forKey: "UserSurname")
-                self.defaults.set(User.userName, forKey: "UserName")
+                self.defaults.set(User.userEmail, forKey: "email")
+                self.defaults.set(User.userPassword, forKey: "password")
                 
-                let controller = self.storyboard?.instantiateViewController(withIdentifier: "router") as? NavigationRouterViewController
-                self.present(controller!, animated: true, completion: nil)
+                let presentedVC = self.storyboard!.instantiateViewController(withIdentifier: "login") as! LoginViewController
+                self.present(presentedVC, animated: false, completion: nil)
             }
         }
         task.resume()
     }
-
+    
+    @IBAction func backItem(_ sender: UIBarButtonItem) {
+        switch sender.tag {
+        case 1:
+            remove(asChildViewController: viewControllers[sender.tag])
+            sender.tag -= 1
+            add(asChildViewController: viewControllers[sender.tag])
+        case 2:
+            remove(asChildViewController: viewControllers[sender.tag])
+            sender.tag -= 1
+            add(asChildViewController: viewControllers[sender.tag])
+        default:
+            self.present(loginViewController, animated: true, completion: nil)
+        }
+    }
+    
 }

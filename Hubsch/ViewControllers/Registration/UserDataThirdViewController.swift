@@ -13,16 +13,12 @@ class UserDataThirdViewController: UIViewController {
     @IBOutlet weak var userEmail: UITextField!
     @IBOutlet weak var userPassword: UITextField!
     @IBOutlet weak var userRepeatPassword: UITextField!
-    
-    let router = RegistrationRouterViewController()
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.hideKeyboardWhenTappedAround()
         
-        router.isFirstVC = false
-        router.isThirdVC = true
         
         userEmail.addTarget(self, action: #selector(checkEmail), for: .allEditingEvents)
         userPassword.addTarget(self, action: #selector(checkPassword), for: .allEditingEvents)
