@@ -9,12 +9,16 @@
 import UIKit
 import CoreData
 
+struct Hubsch {
+    static var AppToken = "E1AFA3934D697918BF175F633F7D3"
+}
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true

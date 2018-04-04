@@ -11,13 +11,12 @@ import UIKit
 class RegistrationRouterViewController: UIViewController {
 
     @IBOutlet weak var changedContent: UIView!
-    @IBOutlet weak var progressIndicator: UIView!
+    @IBOutlet weak var indicator:UIView!
     @IBOutlet weak var nextStepButton: UIButton!
     @IBOutlet weak var backBarItem: UIBarButtonItem!
     
     var firstRespond:Bool = true
     let defaults = UserDefaults.standard
-    
     var viewControllers = [UIViewController]()
     
     private lazy var firstViewController: UserDataFirstViewController = {
@@ -46,11 +45,14 @@ class RegistrationRouterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         viewControllers = [firstViewController,secondViewController,thirdViewController]
         nextStepButton.tag = 0
         nextStepButton.layer.cornerRadius = 5
         nextStep(nextStepButton)
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
     }
     
     private func add(asChildViewController viewController: UIViewController) {
@@ -82,42 +84,43 @@ class RegistrationRouterViewController: UIViewController {
     @IBAction func nextStep(_ sender: UIButton) {
         
         if sender.tag == (viewControllers.count - 1) {
-            
+
             if (User.userEmail == "") {
                 showAlertView(text: "Please fill email", title: "Warning")
                 return
             }
-            
+
             if (User.userPassword == "") {
                 showAlertView(text: "Please fill password", title: "Warning")
                 return
             }
-            
+
             registation()
         }
         else {
             if firstRespond {
-                
+
                 add(asChildViewController: viewControllers[sender.tag])
                 firstRespond = !firstRespond
             }
             else {
-                
+
                 if (User.userName == "") {
                     showAlertView(text: "Please fill name", title: "Warning")
                     return
                 }
-                
+
                 if (User.userSurname == "") {
                     showAlertView(text: "Please fill surname", title: "Warning")
                     return
                 }
-                
+
                 remove(asChildViewController: viewControllers[sender.tag])
                 sender.tag += 1
+
                 self.backBarItem.tag += 1
                 add(asChildViewController: viewControllers[sender.tag])
-                
+
                 if sender.tag == (viewControllers.count - 1) {
                     self.nextStepButton.titleLabel?.text = "Registrate me"
                 }
@@ -163,14 +166,15 @@ class RegistrationRouterViewController: UIViewController {
         case 1:
             remove(asChildViewController: viewControllers[sender.tag])
             sender.tag -= 1
+            self.view.reloadInputViews()
             add(asChildViewController: viewControllers[sender.tag])
         case 2:
             remove(asChildViewController: viewControllers[sender.tag])
             sender.tag -= 1
+            self.view.reloadInputViews()
             add(asChildViewController: viewControllers[sender.tag])
         default:
-            self.present(loginViewController, animated: true, completion: nil)
+            dismiss(animated: true, completion: nil)
         }
-    }
-    
+    }    
 }

@@ -16,11 +16,12 @@
 		A3A9D6E7204BE77B001D0C89 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A9D6E6204BE77B001D0C89 /* CollectionViewCell.swift */; };
 		A3A9D6E9204C3D50001D0C89 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A9D6E8204C3D50001D0C89 /* MainViewController.swift */; };
 		A3A9D6EA204C6D91001D0C89 /* AACarousel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A9D6EB204C6D91001D0C89 /* AACarousel.framework */; };
-		A3A9D6ED204C72CE001D0C89 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A9D6EC204C72CE001D0C89 /* SearchViewController.swift */; };
 		A3A9D6EF204C7446001D0C89 /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A9D6EE204C7446001D0C89 /* FavouritesViewController.swift */; };
 		A3A9D6F1204D372F001D0C89 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A9D6F0204D372F001D0C89 /* ChatViewController.swift */; };
 		A3A9D6F3204D42D3001D0C89 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A9D6F2204D42D3001D0C89 /* Color.swift */; };
 		A3A9D6F5204D5EDE001D0C89 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A9D6F4204D5EDE001D0C89 /* Keyboard.swift */; };
+		A3B5806B204FDEFC0076E3FE /* CartShopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5806A204FDEFC0076E3FE /* CartShopTableViewCell.swift */; };
+		A3B5806F204FE3690076E3FE /* CartShopTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5806E204FE3690076E3FE /* CartShopTableViewController.swift */; };
 		A3BA37092047FD12003EB55E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BA37082047FD12003EB55E /* User.swift */; };
 		A3BA370B20480B2B003EB55E /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BA370A20480B2B003EB55E /* Regex.swift */; };
 		A3BA373E20493694003EB55E /* NavigationRouterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BA373D20493694003EB55E /* NavigationRouterViewController.swift */; };
@@ -45,11 +46,12 @@
 		A3A9D6E6204BE77B001D0C89 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		A3A9D6E8204C3D50001D0C89 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A3A9D6EB204C6D91001D0C89 /* AACarousel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AACarousel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A3A9D6EC204C72CE001D0C89 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		A3A9D6EE204C7446001D0C89 /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
 		A3A9D6F0204D372F001D0C89 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		A3A9D6F2204D42D3001D0C89 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		A3A9D6F4204D5EDE001D0C89 /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
+		A3B5806A204FDEFC0076E3FE /* CartShopTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartShopTableViewCell.swift; sourceTree = "<group>"; };
+		A3B5806E204FE3690076E3FE /* CartShopTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartShopTableViewController.swift; sourceTree = "<group>"; };
 		A3BA37082047FD12003EB55E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A3BA370A20480B2B003EB55E /* Regex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
 		A3BA373D20493694003EB55E /* NavigationRouterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRouterViewController.swift; sourceTree = "<group>"; };
@@ -103,9 +105,9 @@
 				A353A5BD20467C370081436A /* LoginViewController.swift */,
 				A3BA373D20493694003EB55E /* NavigationRouterViewController.swift */,
 				A3A9D6E8204C3D50001D0C89 /* MainViewController.swift */,
-				A3A9D6EC204C72CE001D0C89 /* SearchViewController.swift */,
 				A3A9D6EE204C7446001D0C89 /* FavouritesViewController.swift */,
 				A3A9D6F0204D372F001D0C89 /* ChatViewController.swift */,
+				A3B5806E204FE3690076E3FE /* CartShopTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -145,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				A3A9D6E6204BE77B001D0C89 /* CollectionViewCell.swift */,
+				A3B5806A204FDEFC0076E3FE /* CartShopTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -213,7 +216,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = iPiterGroup;
 				TargetAttributes = {
 					A3D2A2C520453205005E9815 = {
@@ -298,7 +301,6 @@
 				"${BUILT_PRODUCTS_DIR}/JSQMessagesViewController/JSQMessagesViewController.framework",
 				"${BUILT_PRODUCTS_DIR}/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
-				"${BUILT_PRODUCTS_DIR}/TKSubmitTransition/TKSubmitTransition.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -306,7 +308,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQMessagesViewController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQSystemSoundPlayer.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TKSubmitTransition.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -321,7 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3A9D6EF204C7446001D0C89 /* FavouritesViewController.swift in Sources */,
-				A3A9D6ED204C72CE001D0C89 /* SearchViewController.swift in Sources */,
+				A3B5806F204FE3690076E3FE /* CartShopTableViewController.swift in Sources */,
 				A3A9D6E9204C3D50001D0C89 /* MainViewController.swift in Sources */,
 				A353A5BE20467C370081436A /* LoginViewController.swift in Sources */,
 				A3BA370B20480B2B003EB55E /* Regex.swift in Sources */,
@@ -337,6 +338,7 @@
 				A353A5C520467C990081436A /* UserDataSecondViewController.swift in Sources */,
 				A3BA37092047FD12003EB55E /* User.swift in Sources */,
 				A3D2A2D220453205005E9815 /* Hubsch.xcdatamodeld in Sources */,
+				A3B5806B204FDEFC0076E3FE /* CartShopTableViewCell.swift in Sources */,
 				A3BA374020497BA0003EB55E /* ViewExtension.swift in Sources */,
 				A3A9D6F3204D42D3001D0C89 /* Color.swift in Sources */,
 			);
@@ -378,6 +380,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -385,6 +388,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -435,6 +439,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -442,6 +447,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -477,10 +483,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LLVYB6KLZ5;
+				DEVELOPMENT_TEAM = T2SAX7KX2C;
 				INFOPLIST_FILE = Hubsch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = iPG.Hubsch;
+				PRODUCT_BUNDLE_IDENTIFIER = iPG.Hubsc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -493,10 +499,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LLVYB6KLZ5;
+				DEVELOPMENT_TEAM = T2SAX7KX2C;
 				INFOPLIST_FILE = Hubsch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = iPG.Hubsch;
+				PRODUCT_BUNDLE_IDENTIFIER = iPG.Hubsc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

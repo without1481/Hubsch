@@ -40,7 +40,6 @@ class FavouritesViewController: UIViewController,UICollectionViewDataSource,UICo
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let padding: CGFloat =  20
         let collectionViewSize = collectionView.frame.size.width - padding
-        
         return CGSize(width: collectionViewSize/2, height: 250)
     }
     
@@ -50,7 +49,6 @@ class FavouritesViewController: UIViewController,UICollectionViewDataSource,UICo
     
     @IBAction func changeItemStatus(_ sender:UIButton) {
         ItemInfo.remove(at: sender.tag)
-        //ItemInfo[sender.tag]["status"] = !(ItemInfo[sender.tag]["status"]! as! Bool)
         collect.reloadData()
     }
 

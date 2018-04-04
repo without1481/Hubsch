@@ -12,17 +12,12 @@ import AACarousel
 
 class MainViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,AACarouselDelegate {
 
-    let pathArray = ["http://www.gettyimages.ca/gi-resources/images/Embed/new/embed2.jpg",
-                     "https://ak.picdn.net/assets/cms/97e1dd3f8a3ecb81356fe754a1a113f31b6dbfd4-stock-photo-photo-of-a-common-kingfisher-alcedo-atthis-adult-male-perched-on-a-lichen-covered-branch-107647640.jpg",
-                     "https://imgct2.aeplcdn.com/img/800x600/car-data/big/honda-amaze-image-12749.png",
-                     "http://www.conversion-uplift.co.uk/wp-content/uploads/2016/09/Lamborghini-Huracan-Image-672x372.jpg",
-                     "very-large-flamingo"]
-    
-    let titleArray = ["picture 1","picture 2","picture 3","picture 4","picture 5"]
+    let pathArray  = ["defaultImage","defaultImage","defaultImage","defaultImage"]
+    let titleArray = ["1","2","3","4"]
     
     private let ItemInfo = [
-        ["title":"Hubsch","imageUrl":"dress","price":"$100"],["title":"Hubsch","imageUrl":"dress","price":"$100"],["title":"Hubsch","imageUrl":"dress","price":"$100"],["title":"Hubsch","imageUrl":"dress","price":"$100"],["title":"Hubsch","imageUrl":"dress","price":"$100"],["title":"Hubsch","imageUrl":"dress","price":"$100"],["title":"Hubsch","imageUrl":"dress","price":"$100"],["title":"Hubsch","imageUrl":"dress","price":"$100"],["title":"Hubsch","imageUrl":"dress","price":"$100"],
-        ["title":"Hubsch","imageUrl":"dress","price":"$100"]
+        ["title":"Hubsch","imageUrl":"girl","price":"$100"],["title":"Hubsch","imageUrl":"girl","price":"$100"],["title":"Hubsch","imageUrl":"girl","price":"$100"],["title":"Hubsch","imageUrl":"girl","price":"$100"],["title":"Hubsch","imageUrl":"girl","price":"$100"],["title":"Hubsch","imageUrl":"girl","price":"$100"],["title":"Hubsch","imageUrl":"girl","price":"$100"],["title":"Hubsch","imageUrl":"girl","price":"$100"],["title":"Hubsch","imageUrl":"girl","price":"$100"],
+        ["title":"Hubsch","imageUrl":"girl","price":"$100"]
     ]
     
     @IBOutlet weak var carouselView:AACarousel!
